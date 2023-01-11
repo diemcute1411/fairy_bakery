@@ -1,0 +1,201 @@
+@media screen and (max-width: 1300px) {
+  /* responsive why choose us  */
+  /* .container__why--items.rounded > img {
+    width: 230px;
+    height: 230px;
+  } */
+}
+@media screen and (max-width: 1200px) {
+  /* responsive header  */
+
+
+  #menu_toggle {
+    display: block;
+  }
+  #menu_close {
+    display: block;
+    margin-left: 178px;
+  }
+  /* header thứ 2 khi responvise  */
+  nav {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(52, 52, 52, 0.85);;
+    z-index: 1000;
+    padding: 10px 24px 10px 40px;
+  }
+  .nav__featured > a {
+    display: none;
+  }
+  .nav__link {
+    display: block;
+  }
+  .nav__link > li {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .nav__link > li:first-child {
+    margin-bottom: 20px;
+  }
+
+  .nav__link > li:last-child {
+    margin: 0;
+  }
+  .Sign_in{
+    display: block;
+  }
+  .Sign_up{
+    display: block;
+  }
+
+  /* form */
+  .link{
+      display: none;
+  }
+  .form_Sign_in{
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      z-index: 1;
+      background-color: #fff;
+      margin-top: -100px;
+  }
+  h3{
+      padding-top: 200px;
+  }
+  .fill{
+      width: 90%;
+  }
+  .fill> div > button{
+      margin: 32px 256px;
+     
+  }
+
+  /* responsive footer  */
+  .container__footer-bottom {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+
+  .container__footer-bottom {
+    margin: 0 90px;
+  }
+  .footer__contact {
+    width: 50%;
+  }
+  .footer__product,
+  .footer__nav {
+    width: 25%;
+    padding-bottom: 50px;
+  }
+  form > div > label {
+    width: 25%;
+  }
+  form > div > input,
+  form > div > textarea {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* responsive header  */
+
+  .header__content > h2 {
+    font-size: 40px;
+  }
+  .header__content > p {
+    font-size: 20px;
+  }
+
+   /* form */
+   .link{
+      display: none;
+  }
+  .form_Sign_in{
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      z-index: 1;
+      background-color: #fff;
+      margin-top: -100px;
+  }
+  h3{
+      padding-top: 200px;
+  }
+  .fill{
+      width: 90%;
+  }
+  .fill> div > button{
+      margin: 32px 220px;
+     
+  }
+  /* responsive footer  */
+  .container__footer-bottom {
+    margin: 0 30px;
+  }
+  .container__footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__contact,
+  .footer__product,
+  .footer__nav {
+    margin-bottom: 20px;
+  }
+  .footer__contact,
+  .footer__product,
+  .footer__nav,
+  form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+    /* form */
+  header{
+      height: 1440px;
+  }
+    .link{
+      display: none;
+  }
+  .form_Sign_in{
+      border-radius: 30px;
+      z-index: 1;
+      background-color: #fff;
+      box-shadow: 0 0 2rem rgba(0, 0, 0, 0);
+      border: 2px;
+      width: 90%;
+      margin: 0 auto;
+      margin-top: -1100px;
+  }
+  h3{
+      padding-top: 200px;
+  }
+  .fill{
+      width: 90%;
+      
+  }
+  .fill> div > button{
+     margin: 32px 100px;
+  }
+
+  /* responsive footer  */
+  footer{
+      display: none;
+  }
+  .footer_author {
+      display: none;
+  }
+  .row1{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .row_ten,
+  .row{
+    width: 165%;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 479px) {
+}

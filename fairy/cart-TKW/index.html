@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER NAVIGATION  -->
+    <header>
+        <div class="header__navigation">
+            <div class="fairy__logo">
+                <h1><a class="logo_directional" href="../fairy/index.html">FAIRY</a></h1>
+                <p><a class="logo_directional_down" href="../fairy/index.html">BAKERY</a></p>
+            </div>
+            <button id="menu_toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class=" ">
+                <button id="menu_close">X</button>
+                <div class="nav__featured">
+                    <div class="nav__search">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <a href="/fairy/sign_in.html">Đăng nhập</a>
+                    <a href="/fairy/sign_up.html">Đăng ký</a>
+                    <a href=""><i class="fa-solid fa-user"></i></a>
+                    <a href=""><i style="color:rgb(189, 186, 184);" class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <ul class="nav__link">
+                    <li>
+                        <a class="no_highlight" href="/fairy/index.html">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a class="no_highlight" href="/fairy/About us.html">
+                            Câu chuyện
+                        </a>
+                    </li>
+                    <li>
+                        <a class="no_highlight" href="../chitkweb/SanPham/SanPham/indexprd.html">
+                            Sản phẩm
+                        </a>
+                    </li>
+                    <li>
+                        <a class="no_highlight" href="../Khoi_Nguyen_tkWeb/index.html">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a class="no_highlight" href="./index.html">
+                            Liên hệ
+                        </a>
+                    </li>
+                    <li class="Sign_in">
+                        <a class="no_highlight" href="../sign_in.html">
+                            Đăng nhập
+                        </a>
+                    </li>
+                    <li class="Sign_up">
+                        <a class="no_highlight" href="../sign_up.html">
+                            Đăng ký
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+
+        <div class="header__content">
+            <h2>Giỏ hàng của bạn</h2>
+        </div>
+    </header>
+
+    <div class="link">
+        <a href="./index.html"><p class="home">Trang chủ / </p></a>
+        <p class="đăng_nhập"> Giỏ hàng</p>
+    </div>
+
+
+    <div class="container">
+        <div class="main-content">
+            <div class="prod">
+                <div class="head">
+                    <h1><i class='bx bx-cart'></i>GIỎ HÀNG CỦA BẠN</h1>
+                </div>
+                   <div class="list">
+                       <div class="item" data-key="1">
+                           <div class="img"><img src="img/bread2.png"></div>
+                           <div class="comment">
+                               <div class="title">Bánh mì ngũ cốc</div>
+                               <div class="des">
+                                  Bánh mỳ ngũ cốc thường được làm từ nhiều loại ngũ cốc, các loại đậu khác nhau.
+                               </div>
+                           </div>
+                           <div class="price">30.000vnđ</div>
+                           <div class="buttons_added">
+                            <input class="minus" type="button" value="-">
+                            <input aria-label="quantity" class="input-qty" min="1" name="" type="number" value="">
+                            <input class="plus" type="button" value="+">
+                          </div>
+                        
+                        </div>
+                        <div class="item" data-key="2">
+                            <div class="img"><img src="img/bread1.png"></div>
+                            <div class="comment">
+                                <div class="title">Bánh mì nguyên cám</div>
+                                <div class="des">
+                                    Bánh mì nguyên cám có hàm lượng protein chưa đến 25% và rất giàu chất xơ.
+                                </div>
+                            </div>
+                            <div class="price">30.000vnđ</div>
+                            <div class="buttons_added">
+                             <input class="minus" type="button" value="-">
+                             <input aria-label="quantity" class="input-qty" min="1" name="" type="number" value="">
+                             <input class="plus" type="button" value="+">
+                           </div>
+                         
+                         </div>
+                         <div class="item" data-key="3">
+                            <div class="img"><img src="img/bread3.png"></div>
+                            <div class="comment">
+                                <div class="title">Bánh mì nguyên hạt</div>
+                                <div class="des">
+                                    Bánh mì nguyên hạt thường chứa 9 loại ngũ cốc khác nhau, có nhiều đạm thực vật và chất xơ.
+                                </div>
+                            </div>
+                            <div class="price">20.000vnđ</div>
+                            <div class="buttons_added">
+                             <input class="minus" type="button" value="-">
+                             <input aria-label="quantity" class="input-qty" min="1" name="" type="number" value="">
+                             <input class="plus" type="button" value="+">
+                           </div>
+                         
+                         </div>
+                    </div>
+            
+                <div class="bott"></div>
+            </div>
+            <div class="pay">
+                <h2> Chi tiết thanh toán</h2>
+                <div class="fist">
+                    <div class="fist-L" style="font-weight: 500;">
+                        <div class="fist-m">Tổng tiền hàng </div>
+                    
+                        <div class="fist-n">Phí vận chuyển</div>
+                    
+                         <div class="fist-c">Tổng thanh toán</div>
+                    </div>
+                    <div class="fist-1">
+                        <div class="mon1">80.000vnđ</div>
+                        <div class="mon2">20.000vnđ</div>
+                        <div class="mon3">100.000vnđ</div>
+                    </div>
+                    
+            
+                </div>
+                <div class="second" style="font-weight:500;">
+                    Phương thức thanh toán<br>
+                    <input type="radio" name="" value="lua-chon1" checked="checked" />Thanh toán khi nhận hàng<br>
+                    <input type="radio" name="" value="lựa-chon-2"/>Thanh toán bằng thẻ<br>
+
+                </div>
+                <button class="add">MUA HÀNG</button>
+            </div>
+
+        </div>
+        <div class="last-content">
+            <h2>Bạn có thể thích</h2>
+        <div class="List-L">
+            <div><i class='bx bxs-chevron-left'></i></div>
+            <div class="it" data-key="1">
+                <div class="im1"><img src="img/im2.png"></div>
+                
+                    <div class="title1">Bánh mì nguyên cám</div>
+                
+                <div class="price1">30.000vnđ</div>
+
+             
+             </div>
+             <div class="it" data-key="2">
+                <div class="im1"><img src="img/im3.png"></div>
+                
+                    <div class="title1">Bánh mì hoa cúc </div>
+                
+                <div class="price1">40.000vnđ</div>
+
+             
+             </div>
+             <div class="it" data-key="3">
+                <div class="im1"><img src="img/im1..png"></div>
+               
+                    <div class="title1">Bánh mì trứng nướng</div>
+                
+                <div class="price1">20.000vnđ</div>
+
+             
+             </div>
+            
+            <div><i class='bx bxs-chevron-right'></i></div> 
+        </div>
+           
+
+            
+        </div>
+
+    </div>
+    <!-- FOOTER  -->
+    <footer>
+        <div class="footer__cover">
+            <!-- <img src="./assets/image/footer.jpg" </div> -->
+            <div class="container__footer">
+                <div class="container__footer-top">
+                    <h1>Fairy</h1>
+                    <p>BAKERY</p>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container__footer-bottom">
+                    <div class="footer__contact">
+                        <h6>Liên Hệ</h6>
+                        <p><i class="fa-solid fa-phone"></i>0331256895</p>
+                        <p><i class="fa-solid fa-location-pin"></i>CT TNHH Phương Lan: CN3, KCN Vĩnh Tuy, P. Láng Hạ, Q.
+                            Đống Đa, Tp. Hà Nội
+                        </p>
+                        <p><i class="fa-solid fa-envelope"></i>Số ĐKKD 0101652678 do Sở KHĐT Tp. Hà Nội cấp ngày
+                            09/10/2007
+                        </p>
+                    </div>
+                    <ul class="footer__product">
+                        <h6>Sản Phẩm</h6>
+                        <li><a href="">Bánh kem</a></li>
+                        <li><a href="">Bánh gato</a></li>
+                        <li><a href="">Bánh phô mai</a></li>
+                        <li><a href="">Bánh sừng bò</a></li>
+                        <li><a href="">Bánh sinh nhật</a></li>
+                        <li><a href="">Bánh ăn kiêng</a></li>
+                    </ul>
+                    <ul class="footer__nav">
+                        <h6>Liên kết nhanh</h6>
+                        <li><a href="../index.html">Trang chủ</a></li>
+                        <li><a href="../About us.html">Câu chuyện</a></li>
+                        <li><a href="../chitkweb/SanPham/SanPham/indexprd.html">Sản phẩm</a></li>
+                        <li><a href="../Khoi_Nguyen_tkWeb/index.html">Blog</a></li>
+                        <li><a href="../Contact/index.html">Liên hệ</a></li>
+                    </ul>
+                    <form action="">
+                        <div>
+                            <label for="name">Name</label>
+                            <input id="name" type="text" placeholder="Your name...">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" type="text" placeholder="Your email...">
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea name="" id="" cols="30" rows="4" placeholder="Your message..."></textarea>
+                        </div>
+                        <div>
+                            <label for="message"></label>
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer_author">Copyrights © 2019 by Fairy Bakery
+    </div>
+    
+</body>
+</html>

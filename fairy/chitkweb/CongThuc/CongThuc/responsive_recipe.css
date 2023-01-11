@@ -1,0 +1,114 @@
+@media screen and (max-width: 1300px) {
+     
+}
+
+/* mobile & tablet */
+@media screen and (max-width: 1023px) {
+    #recipe_detail_area {
+    flex-direction: column;
+    width: 100%;
+   }
+   #recipe_detail {
+    width: 100%;
+   }
+   #using_bread {
+        margin-left: 28%;
+        margin-top: 50px;
+   }
+
+   #sec_howtomake >ol {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;    
+   }
+   #sec_howtomake >ol >li {
+    width: 100%;
+    flex-direction: column;
+    float: left;
+    padding: 0;    
+   }
+}
+
+/* tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    
+    #item_recipe_list {
+        max-width: fit-content;
+    }
+    .swiper-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .swiper-wrapper >li {
+        padding-bottom: 20px;
+    }
+
+    #share_recipe_area {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        width: 100%;
+    }   
+    .sub_head {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    #share_recipe_area >div .share_list_tag {
+      margin-left: 0;
+}
+    .share_list_tag {
+        flex-wrap: wrap;
+        margin: 0;
+        max-width: fit-content;
+    }
+    .share_list {
+        flex-wrap: wrap;
+        padding-left: 40px;
+        
+    }
+
+}
+
+/* moblie */
+
+@media (max-width: 739px) {
+    #item_recipe_list >ul {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        }
+        #item_recipe_list >ul >li {
+            padding-left: 90px;
+            padding-bottom: 10px;
+        }
+    
+        #share_recipe_area {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            width: 100%;
+        }   
+        .sub_head {
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        #share_recipe_area >div .share_list_tag {
+          margin-left: 0;
+    }
+        .share_list_tag {
+            flex-wrap: wrap;
+            margin: 0;
+            max-width: fit-content;
+        }
+        .share_list {
+            flex-wrap: wrap;
+            padding-left: 40px;
+            
+        }
+}
+

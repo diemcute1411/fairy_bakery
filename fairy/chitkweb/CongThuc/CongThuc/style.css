@@ -1,0 +1,974 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Red+Hat+Text:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Red+Hat+Text:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Red+Hat+Text:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+/* Pacifico font  */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+/* Roboto _Christian Robertson  */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* COMMON CSS  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style-type: none;
+}
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body {
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  padding: 0 10%;
+  text-align: center;
+}
+.categories__title {
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 70px;
+  letter-spacing: 0.0025em;
+  text-transform: capitalize;
+  color: #5a0000;
+  text-align: center;
+}
+/* css add to cart button  */
+.add_to_cart {
+  background: #e7931a;
+  border-radius: 19px;
+  padding: 7px 16.8px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+.add_to_cart > i {
+  padding-right: 6px;
+}
+
+/* ================================================== CSS HEADER  */
+
+header {
+  background: url("../CongThuc/images/banner_product_detail.jpg") no-repeat center;
+  background-size: cover;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 30px 52px 80px 52px;
+}
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#menu_toggle {
+  display: none;
+  border: none;
+  padding: 10px;
+  background-color: rgb(149 148 148 / 50%);
+}
+#menu_toggle > i {
+  font-size: 20px;
+  color: #fff;
+}
+#menu_toggle:hover {
+  cursor: pointer;
+  background-color: rgba(143, 130, 130, 0.5);
+}
+#menu_close {
+  display: none;
+  /* position: absolute; */
+  right: 0;
+  top: 20px;
+  border: none;
+  padding: 10px 14px;
+  background-color: rgb(149 148 148 / 50%);
+  color: #fff;
+  text-align: right;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.fairy__logo {
+  text-align: center;
+}
+.fairy__logo > h1 > .logo_directional {
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+.fairy__logo > p > .logo_directional_down{
+  color: #fff;
+  font-weight: 400;
+}
+.fairy__logo > span {
+}
+nav {
+  position: relative;
+}
+nav.active {
+  /* display: none; */
+  display: block;
+}
+.Sign_in{
+  display: none;
+}
+.Sign_up{
+  display: none;
+}
+
+.nav__featured {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+}
+.nav__featured > div,
+.nav__featured > a {
+  margin: 0 10px;
+}
+.nav__search {
+  background-color: transparent;
+  padding: 6px 20px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  margin-left: 0px !important;
+}
+.nav__search > button {
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  padding-right: 6px;
+  cursor: pointer;
+}
+.nav__search > input {
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+}
+.nav__search > input::placeholder {
+  color: #fff;
+}
+
+.nav__featured > a {
+  color: #fff;
+}
+.nav__featured > a:hover {
+  color: #bcafaf;
+}
+
+.nav__featured > a:last-child {
+  /* color: #fff; */
+  margin: 0 0 0 10px;
+}
+.nav__link {
+  display: flex;
+}
+.nav__link > li {
+  margin: 0 30px;
+}
+.nav__link > li:hover > a {
+  color: #bcafaf;
+  /* text-decoration: underline; */
+  
+}
+.nav__link > li:hover > .highlight {
+  border-bottom: #bcafaf;
+  /* text-decoration: underline; */
+  
+}
+.nav__link > li:first-child {
+  margin: 0 30px 0 0;
+}
+.nav__link > li:last-child {
+  margin: 0 0 0 30px;
+}
+.nav__link > li > .highlight {
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+.nav__link > li > .no_highlight {
+  color: #fff;
+  
+}
+
+.header__content {
+  text-align: center;
+}
+.header__content > h2 {
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 112px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.header__content > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin: 10px 0 20px 0;
+}
+.header__content > button {
+  border: 1px solid #ffffff;
+  border-radius: 28px;
+  color: #fff;
+  padding: 8px 34px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: transparent;
+}
+.header__content > button:hover {
+  background-color: rgba(243, 230, 230, 0.5);
+}
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+div {
+  display: block;
+}
+
+tbody.recipe_list {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+body {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+}
+
+table.recipe_list {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-indent: initial;
+  display: table;
+}
+
+tr.recipe_list {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+th.recipe_list {
+  display: table-cell;
+  vertical-align: inherit;
+  text-align: -internal-center;
+}
+
+td.recipe_list {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+section {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%; 
+  margin:0px auto;
+}
+
+ /* Style the list */
+ ul.breadcrumbs {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Display list items side by side */
+ul.breadcrumbs li {
+  display: inline;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 19px;
+  font-family: 'Roboto', sans-serif;
+}
+/* add a slash symbol before each list item */
+ul.breadcrumbs li+li:before {
+  padding: 8px;
+  color: #000000;
+  content: "/\00a0";
+}
+/* add a color to all links inside the list */
+ul.breadcrumbs li a {
+  color: #000000;
+  text-decoration: none;
+}
+/* add a color on mouse-over */
+ul.breadcrumbs li a:hover {
+  color: #ff9933;
+  text-decoration: none;
+}
+
+
+#main-heading{
+    font-style: normal;
+    line-height: 24px;
+    text-align: center;
+    padding: 0px 0px;
+    background-color: #F3F0EB;
+    position: relative;
+    display: block;
+}
+
+#main-heading h1 {
+  padding-top: 40px;
+  font-size: 24px;
+}
+
+#main-heading p {
+  margin-top: 30px;
+  padding-bottom: 40px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+
+.row {
+  padding-top: 70px;
+  width: 100%;
+  height: 1092px;
+  padding: 20px 80px;
+  margin: 65px auto 0px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.thumb-content{ 
+    padding-left: 50px;
+    padding-right: 30px;
+}
+#recipe_detail{
+  width: 46%;
+  order: 0;
+}
+
+#recipe_ttl {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column; 
+}
+
+#recipe_ttl1 {  
+  display: flex;
+  align-items: center;
+}
+
+.sec_head {
+  font-family: 'Roboto';
+  font-style: normal;
+  /* font-weight: 800; */
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+}
+
+#recipe_ttl1 p {
+  color: #666666;
+  margin-left: 70px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#recipe_detail .recipe_list {
+  margin-top: 40px;
+  width: 100%;
+}
+
+#recipe_detail .recipe_list >tbody >tr {
+  background: url(./images/bg_dot_line.png) center center repeat-x;
+  background-size: 6px auto ;
+}
+
+#recipe_detail .recipe_list >tbody >tr >th {
+  text-align: left;
+}
+
+#recipe_detail .recipe_list >tbody >tr >td {
+  text-align: right;
+  font-weight: 400;
+  padding: 5px 0;
+  vertical-align: middle;
+  
+}
+
+#recipe_detail .recipe_list >tbody >tr >th >span {
+  padding: 2px 10px 2px 2px;
+  display: inline-block;
+  background-color: #fff;
+  font-size: 20px;
+}
+
+#recipe_detail .recipe_list >tbody >tr >td > span {
+  padding: 2px 2px 2px 10px;
+  background-color: #fff;
+  font-size: 20px;
+}
+
+#recipe_detail .recipe_list a {
+  color: #000000;
+  text-decoration: none;
+}
+
+#recipe_detail .recipe_list >tbody >tr >th.group {
+  background-color: #fff;
+  position: relative;
+  padding: 0 0 0 40px;
+}
+
+#recipe_detail .recipe_list >tbody >tr >th.group >div {
+  border-right: 2px solid #AEAEAE;
+  height: 100%;
+  position: absolute;
+  padding-right: 5px;
+  margin-right: 5px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+}
+
+#recipe_detail .recipe_list >tbody >tr >th.group >div >span {
+  font-size: 12px;
+  font-weight: 800;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 20px;
+  text-align: center;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #343434;
+  position: absolute;
+  left: 0;
+}
+
+#recipe_detail .recipe_list >tbody >tr >th.group table {
+  margin-top: 0;
+  width: 100%;
+} 
+
+#recipe_detail_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin: 65px auto 0;
+  max-width: 1000px;
+}
+
+#using_bread {
+    background:  #F3F0EB;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:  wrap;
+    justify-content: center;
+    position: relative;
+    padding: 50px 0;
+    width: 45%;
+    order: 1;
+    text-align: center;
+}
+
+#using_bread.feature-img {
+  margin: 30px 0 15px;
+}
+
+.play-btn {
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+
+.video-player {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  cursor: pointer;
+}
+
+.video-player:focus {
+  outline: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  cursor: pointer;
+}
+
+#sec_howtomake {
+  margin: 100px auto 0;
+  max-width: 1000px ;
+  order: 3 ; 
+} 
+
+ol {
+  list-style: none;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 200px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style: none;
+}
+
+#sec_howtomake >ol{
+  counter-reset: item;
+  display: flex;
+  flex-wrap: wrap ;
+}
+
+#sec_howtomake >ol >li::before {
+  background-color: #343434;
+  border-radius: 50%;
+  font-size: 20px;
+  counter-increment: item;
+  content: counter(item);
+  display: block;
+  text-align: center;
+  line-height: 36px;
+  margin-right: 8%;
+  width: 36px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+#sec_howtomake >ol >li {
+  margin-right: 8%;
+  margin-top: 50px;
+  width: 28%;
+  font-size: 18px;
+}
+
+#sec_howtomake .al {
+  background-color: #343434;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+.circle {
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 20px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 20px;
+}
+
+#sec_howtomake .num{
+  background-color: #343434;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+#sec_item_recipe {
+  background-color: #F3F0EB;
+  position: relative;
+  margin-top: 150px;
+  padding: 40px 0 70px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#item_recipe_list {
+  overflow: hidden;
+  margin: 40px auto 0;
+  width: 1000px;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+#item_recipe_list a {
+  display: block;
+}
+
+#item_recipe_list .swiper-slide {
+  margin-right: 40px;
+}
+
+a:visited {
+  /* color: #43423f; */
+  text-decoration: none;
+}
+
+.over {
+  display: block;
+  transition: .2s;
+}
+
+#item_recipe_list_image {
+  font-size: 0;
+}
+
+#item_recipe_list .image img {
+  height: auto;
+  width: 100%;
+}
+
+#share_recipe_area {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 -39px;
+  padding: 75px 0 75px;
+  max-width: 1300px;
+  width: 1259px;
+}
+
+#share_recipe_area > div {
+  text-align: center;
+  width: 50%;
+}
+
+.sub_head {
+  color: #000000;
+  font-size: 20px;
+}
+
+#share_recipe_area > div >ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+#share_recipe_area .share_list_tag > li {
+  margin: 5px 5px 0;
+}
+
+#share_recipe_area .share_list_tag > li > a {
+  font-size: 14px;
+  line-height: 1;
+  background-color: #343434;
+  border-radius: 19px;
+  padding: 10px 20px;
+  display: block;
+  width: 158px;
+  height: 34.16px;
+}
+
+#share_recipe_area >div >ul >li >a {
+  transition: .2s;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:-webkit-any-link {
+  /* color: -webkit-link; */
+  cursor: pointer;
+}
+
+#share_recipe_area .share_list > li {
+  margin: 0 10px;
+  width: 50px;
+}
+
+#share_recipe_area .share_list >li >icon_fb {
+  background-image: url(./images/facebook\ 1.png);
+  background-size: 12px auto;
+}
+
+#share_recipe_area .share_list >li >a {
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  line-height: 50px;
+  overflow: hidden;
+}
+
+/* FOOTER */
+footer{
+	background: url("../CongThuc/images/footer2.jpg")no-repeat center;
+	position: relative;
+	background-size: cover;
+}
+
+.footer__cover {
+	/* width: 100%;
+	height: 100%; */
+  }
+  /* 
+  .footer__cover::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(3, 96, 13, 0.6);
+	z-index: 1;
+  } */
+  .footer__cover > img {
+	width: 100%;
+	height: 100%;
+  }
+  .container__footer {
+	/* position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%; */
+	/* background: url("../image/footer.jpg") no-repeat center;
+	background-size: cover; */
+	padding: 60px 0 63px 0;
+	z-index: 10;
+  } 
+  .container__footer-top {
+	text-align: center;
+  }
+  .container__footer-top > h1 {
+	font-family: "Pacifico";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 42px;
+	letter-spacing: 0.05em;
+  
+	color: #ffffff;
+  }
+  .container__footer-top > p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 42px;
+	letter-spacing: 0.05em;
+  
+	color: #ffffff;
+  }
+  .container__footer-top > ul {
+	display: inline-flex;
+	font-size: 24px;
+	margin-bottom: 37px;
+  }
+  .container__footer-top > ul > li {
+	margin: 0 8px;
+  }
+  .container__footer-top > ul > li > a > i {
+	color: #e7931a;
+  }
+  
+  .container__footer-bottom {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 152px;
+	/* width: 100%; */
+  }
+  .footer__contact,
+.footer__product,
+.footer__nav,
+form {
+  /* margin: 0 10px; */
+}
+.footer__contact {
+  width: 30%;
+}
+.footer__product {
+  width: 20%;
+  margin-left: 5%;
+}
+.footer__nav {
+  width: 20%;
+}
+form {
+  flex: 1;
+}
+.footer__contact > h6,
+.footer__product > h6,
+.footer__nav > h6 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.005em;
+
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.footer__contact > p,
+.footer__product > li,
+.footer__nav > li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.005em;
+
+  color: #ffffff;
+  padding: 6px 0;
+}
+.footer__contact > p {
+  line-height: 1.4;
+  /* margin-right: 10px; */
+}
+.footer__contact > p > i {
+  padding-right: 10px;
+}
+.footer__product > li > a,
+.footer__nav > li > a {
+  color: #fff;
+}
+.footer__product > li:hover > a,
+.footer__nav > li:hover > a {
+  color: #edc0c0;
+}
+
+.comment{
+  background-color: rgba(0, 0, 0, 0.42);
+  padding: 33px 28px 0 28px;
+  /* padding-top: 33px; */
+}
+label {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+form > div {
+  display: flex;
+  margin-bottom: 18px;
+}
+form > div > label {
+  width: 30%;
+}
+form > div > input,
+form > div > textarea {
+  flex: 1;
+  padding: 16px 20px;
+  background-color: rgba(61, 60, 60, 0.65);
+  border: none;
+  border-radius: 4px;
+}
+form > div > button {
+  float: right;
+  padding: 10px 20px;
+  background: #e7931a;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5 ease;
+}
+form > div > button:hover {
+  background-color: #e2a145;
+}
+.footer_author {
+  background-color: #000000;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+}
